@@ -9,7 +9,7 @@ jobs:
     name: Release ObEngine Linux package
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Clean previous execution
@@ -55,7 +55,7 @@ jobs:
     name: Release ObEngine Windows package
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Create deps directory
@@ -95,7 +95,7 @@ jobs:
     name: Release ObEngine MacOS package
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Install SFML
