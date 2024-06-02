@@ -50,7 +50,7 @@ jobs:
       - name: Create package
         run: cp -r engine/ release/; cp ./build/src/Player/ObEnginePlayer release/; cp ./build/src/Toolkit/obey release/
       - name: Upload Linux Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: obengine.linux64
           path: ./release
@@ -83,7 +83,7 @@ jobs:
         run: cp -r engine/ release/; cp ./build/src/Player/Release/* ./release/; cp ./build/src/Toolkit/Release/obey.exe ./release;
         shell: pwsh
       - name: Upload Windows Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: obengine.win64
           path: ./release
@@ -111,7 +111,7 @@ jobs:
       - name: Create package
         run: cp -r engine/ release/; cp ./build/src/Player/ObEnginePlayer release/; cp ./build/src/Toolkit/obey release/
       - name: Upload MacOS Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: obengine.macos64
           path: ./release
