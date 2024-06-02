@@ -9,7 +9,7 @@ jobs:
     name: Upload ObEngine Linux artifact
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Clean previous execution
@@ -59,7 +59,7 @@ jobs:
     name: Upload ObEngine Windows artifact
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Create deps directory
@@ -92,7 +92,7 @@ jobs:
     name: Upload ObEngine MacOS artifact
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Install LLVM & Clang
